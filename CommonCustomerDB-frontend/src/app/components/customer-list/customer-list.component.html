@@ -1,0 +1,26 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">NAME</th>
+            <th scope="col">AGE</th>
+            <th scope="col">GENDER</th>
+            <th scope="col">ADDRESS NUMBER</th>
+            <th scope="col">ADDRESS</th>
+            <th scope="col">TEL</th>
+            <th scope="col">EMAIL</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let tempCustomer of customers">
+            <th scope="row">{{ tempCustomer.custId}}</th>
+            <td>{{ tempCustomer.custName}}</td>
+            <td>{{ tempCustomer.custAge}}</td>
+            <td>{{ tempCustomer.custGender}}</td>
+            <td>{{ tempCustomer.custAddressNo}}</td>
+            <td>{{ tempCustomer.custAddress}}</td>
+            <td>{{ tempCustomer.custTel}}</td>
+            <td>{{ tempCustomer.custEmail}}</td>
+        </tr>
+    </tbody>
+</table>
